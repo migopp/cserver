@@ -1,4 +1,4 @@
-CC 			= clang
+CCOMP		= clang
 CFLAGS		= -std=c99 -Wall -Wextra
 
 SRC_DIR 	= src
@@ -21,11 +21,11 @@ server: $(SERVER)
 
 $(CLIENT): $(CLIENT_SRC)
 	mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CCOMP) $(CFLAGS) -o $@ $^
 
 $(SERVER): $(SERVER_SRC)
 	mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CCOMP) $(CFLAGS) -o $@ $^
 
 clean:
 	rm -rf $(TARGET_DIR)
