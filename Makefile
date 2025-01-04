@@ -1,12 +1,8 @@
 CCOMP		= clang
 CFLAGS		= -std=c99 -Wall -Wextra
 
-SRC_DIR 	= src
-CLIENT_DIR	= $(SRC_DIR)/client
-SERVER_DIR	= $(SRC_DIR)/server
-
-CLIENT_SRC 	= $(wildcard $(CLIENT_DIR)/*.c)
-SERVER_SRC 	= $(wildcard $(SERVER_DIR)/*.c)
+CLIENT_SRC 	= client.c
+SERVER_SRC 	= server.c
 
 CLIENT	= target/client
 SERVER	= target/server
