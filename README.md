@@ -1,4 +1,4 @@
-# cserver
+# cserver-demo
 
 Rudimentary server-client demo in C.
 
