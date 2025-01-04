@@ -13,6 +13,12 @@ SERVER	= target/server
 
 all: $(CLIENT) $(SERVER)
 
+client: $(CLIENT)
+	./target/client
+
+server: $(SERVER)
+	./target/server
+
 $(CLIENT): $(CLIENT_SRC)
 	mkdir -p $(dir $@)
 	$(CC) $(CFLAGS) -o $@ $^
@@ -26,4 +32,4 @@ clean:
 
 rebuild: clean all
 
-.PHONY: all clean rebuild
+.PHONY: all client server clean rebuild
