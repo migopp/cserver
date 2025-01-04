@@ -57,6 +57,7 @@ int main(void) {
 
 	// Recv + print message from server
 	char buf[BUFLEN];
+	bzero(buf, BUFLEN);
 	status = recv(sfd, buf, BUFLEN, 0);
 	if (status == 0) {
 		fprintf(stderr, "Server connection closed.\n");

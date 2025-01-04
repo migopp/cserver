@@ -75,6 +75,7 @@ int main(void) {
 
 	// Recv + print message from client
 	char buf[BUFLEN];
+	bzero(buf, BUFLEN);
 	status = recv(nfd, buf, BUFLEN, 0);
 	if (status == 0) {
 		fprintf(stderr, "Client connection closed.\n");
