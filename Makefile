@@ -1,5 +1,5 @@
-CC 		= clang
-CFLAGS	= -std=c99 -Wall -Wextra
+CC 			= clang
+CFLAGS		= -std=c99 -Wall -Wextra
 
 SRC_DIR 	= src
 CLIENT_DIR	= $(SRC_DIR)/client
